@@ -253,7 +253,7 @@ MunitSuite uart_test_suite = {
  * @param data
  * @return
  */
-static MunitResult uart_test_transmition(const MunitParameter params[], void *data)
+static MunitResult uart_test_transmition(const MunitParameter params[] __attribute__((unused)), void *data __attribute__((unused)))
 {
     TEST_TaskLogic(); /* Init uarts */
 
@@ -283,7 +283,7 @@ static MunitResult uart_test_transmition(const MunitParameter params[], void *da
  * @param data
  * @return
  */
-static MunitResult uart_print_result(const MunitParameter params[], void *data)
+static MunitResult uart_print_result(const MunitParameter params[] __attribute__((unused)), void *data __attribute__((unused)))
 {
     printf("\r\n");
 
